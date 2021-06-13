@@ -1,0 +1,79 @@
+<html>
+<title> think@champ </title>
+<head> 
+<style> 
+body{
+margin:0;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background-color:;
+}
+nav ul {
+list-style-type:none;
+margin:0;
+padding:0;
+
+}
+nav ul li{
+ 
+color:blue;
+font-size:16px;
+border:0.3em solid blue;
+border-radius:0.5em;
+width:12em;
+height:3em;
+text-transform:uppercase;
+letter-spacing:0.2em;
+position:relative;
+overflow:hidden;
+z-index:1;
+transition:0.5s;
+margin:1em;
+}
+nav ul li span{
+position:absolute;
+width:25%;
+height:100%;
+background-color:pink;
+transform:translateY(150%);
+border-radius:50%;
+right:calc((var(--n) - 1)  * 105%);
+transition:0.5s;
+transition-delay:calc((var(--n) - 1) * 0.1s);
+z-index:-1;
+}
+nav ul li:hover{
+color:black;
+}
+nav ul li:hover span{
+transform:translateY(0)  scale(2);
+
+}
+nav ul li span:nth-child(1){
+  --n:1;
+
+}
+nav ul li span:nth-child(4){
+   --n:4;
+
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li>
+home
+<span></span><span></span><span></span><span></span>
+</li>
+<li>
+ABOUT
+<span></span><span></span><span></span><span></span>
+</li>
+</ul>
+</nav>
+
+</body>
+</html>
